@@ -3,11 +3,12 @@ import type { ConfigContext, ExpoConfig } from "expo/config";
 export default ({ config }: ConfigContext): ExpoConfig => ({
 	...config,
 	name: "Better Auth",
-	slug: "better-auth",
+	slug: "expo-betterauth",
 	scheme: "better-auth",
 	version: "0.1.0",
 	orientation: "portrait",
 	icon: "./assets/icon.png",
+	owner: "rdp.datacenter",
 	userInterfaceStyle: "automatic",
 	splash: {
 		image: "./assets/icon.png",
@@ -33,11 +34,11 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
 			backgroundColor: "#1F104A",
 		},
 	},
-	// extra: {
-	//   eas: {
-	//     projectId: "your-eas-project-id",
-	//   },
-	// },
+	extra: {
+	  eas: {
+	    projectId: "d732bd68-36b7-437c-b5f6-ca5dadf93e53",
+	  },
+	},
 	experiments: {
 		tsconfigPaths: true,
 		typedRoutes: true,
