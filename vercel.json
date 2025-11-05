@@ -1,5 +1,5 @@
 {
-  "buildCommand": "pnpm expo export -p web",
+  "buildCommand": "npx prisma generate && pnpm expo export -p web",
   "outputDirectory": "dist",
   "devCommand": "pnpm expo start --web",
   "installCommand": "pnpm install",

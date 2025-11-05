@@ -5,10 +5,10 @@
   "scripts": {
     "clean": "git clean -xdf .cache .expo .turbo android ios node_modules",
     "start": "expo start",
-    "dev": "expo run:android",
-    "dev:ios": "expo start --ios",
-    "dev:web": "expo start --web",
-    "build:web": "expo export -p web",
+    "dev:android": "npx prisma generate && expo run:android",
+    "dev:ios": "npx prisma generate &&  expo start --ios",
+    "dev:web": "npx prisma generate && expo start --web",
+    "build:web": "npx prisma generate && expo export -p web",
     "lint": "expo lint",
     "android": "expo run:android"
   },
