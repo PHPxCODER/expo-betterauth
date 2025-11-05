@@ -1,9 +1,10 @@
 import { expoClient } from "@better-auth/expo/client";
 import { createAuthClient } from "better-auth/client";
 import * as SecureStore from "expo-secure-store";
+import Constants from "expo-constants";
 
 export const authClient = createAuthClient({
-	baseURL: "http://localhost:8081",
+	baseURL: Constants.expoConfig?.extra?.betterAuthUrl || "http://localhost:8081",
 	disableDefaultFetchPlugins: true,
 	plugins: [
 		expoClient({

@@ -8,6 +8,7 @@
     "dev": "expo run:android",
     "dev:ios": "expo start --ios",
     "dev:web": "expo start --web",
+    "build:web": "expo export -p web",
     "lint": "expo lint",
     "android": "expo run:android"
   },

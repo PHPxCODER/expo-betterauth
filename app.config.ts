@@ -37,6 +37,8 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
 	extra: {
 	  eas: {
 	    projectId: "d732bd68-36b7-437c-b5f6-ca5dadf93e53",
+		betterauthSecret: process.env.BETTERAUTH_SECRET,
+		betterAuthUrl: process.env.BETTER_AUTH_URL || "http://localhost:8081",
 	  },
 	},
 	experiments: {
