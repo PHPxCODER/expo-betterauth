@@ -5,6 +5,7 @@
   "scripts": {
     "clean": "git clean -xdf .cache .expo .turbo android ios node_modules",
     "start": "expo start",
+    "migrate": "npx @better-auth/cli generate",
     "dev:android": "npx prisma generate && expo run:android",
     "dev:ios": "npx prisma generate &&  expo start --ios",
     "dev:web": "npx prisma generate && expo start --web",
