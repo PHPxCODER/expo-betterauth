@@ -1,13 +1,14 @@
 {
-  "buildCommand": "npx prisma generate && pnpm expo export -p web",
+  "buildCommand": "npx prisma generate && expo export -p web",
   "outputDirectory": "dist",
-  "devCommand": "pnpm expo start --web",
+  "devCommand": "expo",
   "installCommand": "pnpm install",
+  "cleanUrls": true,
   "framework": null,
   "rewrites": [
     {
-      "source": "/(.*)",
-      "destination": "/index.html"
+      "source": "/:path*",
+      "destination": "/"
     }
   ]
 }

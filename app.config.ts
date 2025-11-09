@@ -16,8 +16,8 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
 		backgroundColor: "#1F104A",
 	},
 	web: {
-		bundler: "metro",
 		output: "server",
+		bundler: "metro",
 	},
 	updates: {
 		fallbackToCacheTimeout: 0,
